@@ -1,0 +1,16 @@
+{
+  "name": "jenkins-playwright",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "playwright": "^1.33.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.33.0"
+  },
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
