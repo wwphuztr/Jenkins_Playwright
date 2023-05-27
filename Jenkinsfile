@@ -4,10 +4,14 @@ pipeline {
       image 'mcr.microsoft.com/playwright:v1.17.2-focal'
     } 
   }
+  environment {
+    NPM_CONFIG_CACHE = "${WORKSPACE}/.npm" // Set npm cache directory
+  }
   stages {
     stage('install playwright') {
       steps {
         sh '''
+          npm config set cache "${NPM_CONFIG_CACHE}" --global
           npm i -D @playwright/test
           npx playwright install
         '''
