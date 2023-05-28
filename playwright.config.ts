@@ -30,7 +30,7 @@ export default defineConfig({
     trace: 'retain-on-failure',
 
     // // Set headless mode
-		headless: false,
+    headless: true,
   },
 
   /* Configure projects for major browsers */
